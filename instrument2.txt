@@ -1,0 +1,314 @@
+
+function output2 = instrument2() 
+
+str = getkey ;
+
+persistent A;
+persistent b;
+
+    if (isempty(A))
+        A=10;
+    end
+    if (isempty(b))
+        b=0.2;
+    end
+
+         t=[0:0.01:25]       
+
+         if ( str == 'Q' || str == 'q' )
+
+         C3=530.81	
+         x=C3         
+          
+         y=A.*(exp(1).^(-b.*t)).*((sin(2*pi*x*-3*t)+10)+9*sin(2*pi*x*-5*t)+7*sin(2*pi*x*t)+20*sin(2*pi*x*t))       
+         sound(y)
+         plot(y)
+         
+         instrument2()
+         
+         elseif( str == 'W' || str == 'w' )
+
+         CX3=138.59
+         x=CX3
+          
+         y=A.*(exp(1).^(-b.*t)).*((sin(2*pi*x*-3*t)+10)+7.*sin(2*pi*x*-5*t)+9.*sin(2*pi*x*t)+20.*sin(2*pi*x*t))        
+         sound(y)
+         plot(y)
+         
+         instrument2()
+         
+         
+         elseif( str == 'E' || str == 'e' )
+
+         D3=146.83
+         x=D3
+
+         y=A.*(exp(1).^(-b.*t)).*((sin(2*pi*x*-3*t)+10)+7.*sin(2*pi*x*-5*t)+9.*sin(2*pi*x*t)+20.*sin(2*pi*x*t))        
+         sound(y)
+         plot(y)
+         
+         instrument2()
+         
+         elseif( str == 'R' || str == 'r' )
+
+         DX3=155.56
+         x=DX3
+
+         y=A.*(exp(1).^(-b.*t)).*((sin(2*pi*x*-3*t)+10)+7.*sin(2*pi*x*-5*t)+9.*sin(2*pi*x*t)+20.*sin(2*pi*x*t))      
+         sound(y)
+         plot(y)
+         
+         instrument2()
+         
+         elseif( str == 'T' || str == 't' )
+
+         E3=164.81
+         x=E3
+
+         y=A.*(exp(1).^(-b.*t)).*((sin(2*pi*x*-3*t)+10)+7.*sin(2*pi*x*-5*t)+9.*sin(2*pi*x*t)+20.*sin(2*pi*x*t))        
+         sound(y)
+         plot(y)
+         
+         instrument2()
+         
+         elseif( str == 'Y' || str == 'y' )
+
+         F3=174.61
+         x=F3
+
+         y=A.*(exp(1).^(-b.*t)).*((sin(2*pi*x*-3*t)+10)+7.*sin(2*pi*x*-5*t)+9.*sin(2*pi*x*t)+20.*sin(2*pi*x*t))         
+         sound(y)
+         plot(y)
+         
+         instrument2()
+         
+         elseif( str == 'U' || str == 'u' )
+
+         FX3=184.99
+         x=FX3
+
+         y=A.*(exp(1).^(-b.*t)).*((sin(2*pi*x*-3*t)+10)+7.*sin(2*pi*x*-5*t)+9.*sin(2*pi*x*t)+20.*sin(2*pi*x*t))         
+         sound(y)
+         plot(y)
+         
+         instrument2()
+       
+         elseif( str == 'I' || str == 'ý' )
+
+         G3=195.99
+         x=G3
+
+         y=A.*(exp(1).^(-b.*t)).*((sin(2*pi*x*-3*t)+10)+7.*sin(2*pi*x*-5*t)+9.*sin(2*pi*x*t)+20.*sin(2*pi*x*t))         
+         sound(y)
+         plot(y)
+         
+         instrument2()
+         
+                
+         elseif( str == 'O' || str == 'o' )
+
+         GX3=207.65
+         x=GX3
+
+         y=A.*(exp(1).^(-b.*t)).*((sin(2*pi*x*-3*t)+10)+7.*sin(2*pi*x*-5*t)+9.*sin(2*pi*x*t)+20.*sin(2*pi*x*t))        
+         sound(y)
+         plot(y)
+         
+         instrument2()
+         
+                
+         elseif( str == 'P' || str == 'p' )
+
+         A3=220.00
+         x=A3
+
+         y=A.*(exp(1).^(-b.*t)).*((sin(2*pi*x*-3*t)+10)+7.*sin(2*pi*x*-5*t)+9.*sin(2*pi*x*t)+20.*sin(2*pi*x*t))        
+         sound(y)
+         plot(y)
+         
+         instrument2()
+         
+                
+         elseif( str == 'X' || str == 'x' )
+
+         AX3=233.08
+         x=AX3
+
+         y=A.*(exp(1).^(-b.*t)).*((sin(2*pi*x*-3*t)+10)+7.*sin(2*pi*x*-5*t)+9.*sin(2*pi*x*t)+20.*sin(2*pi*x*t))       
+         sound(y)
+         plot(y)
+         
+         instrument2()
+         
+                
+         elseif( str == 'C' || str == 'c' )
+
+         B3=246.94
+         x=B3
+
+         y=A.*(exp(1).^(-b.*t)).*((sin(2*pi*x*-3*t)+10)+7.*sin(2*pi*x*-5*t)+9.*sin(2*pi*x*t)+20.*sin(2*pi*x*t))         
+         sound(y)
+         plot(y)
+         
+         instrument2()
+             
+         elseif( str == 'A' || str == 'a' )
+
+         C4=261.63
+         x=C4
+
+         y=A.*(exp(1).^(-b.*t)).*((sin(2*pi*x*-3*t)+10)+7.*sin(2*pi*x*-5*t)+9.*sin(2*pi*x*t)+20.*sin(2*pi*x*t))       
+         sound(y)
+         plot(y)
+         
+         instrument2()
+         
+         elseif( str == 'S' || str == 's' )
+             
+         CX4=277.18
+         x=CX4
+
+         y=A.*(exp(1).^(-b.*t)).*((sin(2*pi*x*-3*t)+10)+7.*sin(2*pi*x*-5*t)+9.*sin(2*pi*x*t)+20.*sin(2*pi*x*t))         
+         sound(y)
+         plot(y)
+         
+         instrument2()
+         
+         elseif( str == 'D' || str == 'd' )
+
+         D4=293.66
+         x=D4
+
+         y=A.*(exp(1).^(-b.*t)).*((sin(2*pi*x*-3*t)+10)+7.*sin(2*pi*x*-5*t)+9.*sin(2*pi*x*t)+20.*sin(2*pi*x*t))        
+         sound(y)
+         plot(y)
+         
+         instrument2()
+         
+         elseif( str == 'F' || str == 'f' )
+
+         DX4=311.13
+         x=DX4
+
+         y=A.*(exp(1).^(-b.*t)).*((sin(2*pi*x*-3*t)+10)+7.*sin(2*pi*x*-5*t)+9.*sin(2*pi*x*t)+20.*sin(2*pi*x*t))         
+         sound(y)
+         plot(y)
+         
+         instrument2()
+         
+         elseif( str == 'G' || str == 'g' )
+
+         F4=349.23
+         x=F4
+
+         y=A.*(exp(1).^(-b.*t)).*((sin(2*pi*x*-3*t)+10)+7.*sin(2*pi*x*-5*t)+9.*sin(2*pi*x*t)+20.*sin(2*pi*x*t))         
+         sound(y)
+         plot(y)
+         
+         instrument2()
+         
+                  
+         elseif( str == 'H' || str == 'h' )
+
+         FX4=369.99
+         x=FX4
+
+         y=A.*(exp(1).^(-b.*t)).*((sin(2*pi*x*-3*t)+10)+7.*sin(2*pi*x*-5*t)+9.*sin(2*pi*x*t)+20.*sin(2*pi*x*t))         
+         sound(y)
+         plot(y)
+         
+         instrument2()
+         
+                           
+         elseif( str == 'J' || str == 'j' )
+
+         G4=391.99
+         x=G4
+
+         y=A.*(exp(1).^(-b.*t)).*((sin(2*pi*x*-3*t)+10)+7.*sin(2*pi*x*-5*t)+9.*sin(2*pi*x*t)+20.*sin(2*pi*x*t))         
+         sound(y)
+         plot(y)
+         
+         instrument2()
+         
+                                    
+         elseif( str == 'K' || str == 'k' )
+
+         GX4=415.31
+         x=GX4
+
+         y=A.*(exp(1).^(-b.*t)).*((sin(2*pi*x*-3*t)+10)+7.*sin(2*pi*x*-5*t)+9.*sin(2*pi*x*t)+20.*sin(2*pi*x*t))        
+         sound(y)
+         plot(y)
+         
+         instrument2()
+         
+                                             
+         elseif( str == 'L' || str == 'l' )
+
+         A4=440.00
+         x=A4
+
+         y=A.*(exp(1).^(-b.*t)).*((sin(2*pi*x*-3*t)+10)+7.*sin(2*pi*x*-5*t)+9.*sin(2*pi*x*t)+20.*sin(2*pi*x*t))        
+         sound(y)
+         plot(y)
+         
+         instrument2()
+         
+                                                      
+         elseif( str == 'V' || str == 'v' )
+
+         AX4=466.16
+         x=AX4
+
+         y=A.*(exp(1).^(-b.*t)).*((sin(2*pi*x*-3*t)+10)+7.*sin(2*pi*x*-5*t)+9.*sin(2*pi*x*t)+20.*sin(2*pi*x*t))      
+         sound(y)
+         plot(y)
+         
+         instrument2()
+         
+                                                               
+         elseif( str == 'M' || str == 'm' )
+
+         B4=439.88
+         x=B4
+
+         y=A.*(exp(1).^(-b.*t)).*((sin(2*pi*x*-3*t)+10)+7.*sin(2*pi*x*-5*t)+9.*sin(2*pi*x*t)+20.*sin(2*pi*x*t))        
+         sound(y)
+         plot(y)
+         
+         instrument2()
+         
+     
+         
+         end
+         
+         if( str == 'Z' || str == 'z' )
+
+         Untitled();
+         
+         elseif( str == 'B' || str == 'b' )
+             
+         b=b-0.05
+         
+         instrument2()
+         
+         elseif( str == 'N' || str == 'n' )
+             
+         b=b+0.05
+         
+         instrument2()
+         
+         elseif( str==30 )
+             
+         A=A+1
+         
+         instrument2()
+         
+         elseif( str==31 )
+             
+         A=A-1
+         
+         instrument2()
+         
+         end
